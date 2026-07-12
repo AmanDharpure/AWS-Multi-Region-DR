@@ -5,9 +5,11 @@
 *.tfvars
 *.tfvars.json
 
-
 # Terraform plans
 *.tfplan
+
+# Generated packages
+*.zip
 
 # Crash logs
 crash.log
