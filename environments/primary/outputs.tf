@@ -23,3 +23,10 @@ output "autoscaling_group_name" {
 output "launch_template_id" {
   value = module.compute.launch_template_id
 }
+output "database_endpoint" {
+  value = module.database.db_endpoint
+}
+
+output "database_identifier" {
+  value = module.database.db_instance_identifier
+}

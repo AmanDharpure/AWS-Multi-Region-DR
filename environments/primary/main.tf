@@ -64,3 +64,15 @@ module "compute" {
   desired_capacity = 1
   maximum_capacity = 2
 }
+module "database" {
+  source = "../../modules/database"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  database_subnet_ids = module.networking.private_subnet_ids
+
+  database_security_group_id = module.security.database_security_group_id
+
+  instance_class = "db.t3.micro"
+}
