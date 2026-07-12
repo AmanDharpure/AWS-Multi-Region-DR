@@ -24,10 +24,8 @@ resource "aws_db_instance" "primary" {
   storage_encrypted     = true
 
   db_name  = var.database_name
-  username = var.master_username
-
-  manage_master_user_password = true
-
+username = var.master_username
+password = var.master_password
   db_subnet_group_name = aws_db_subnet_group.main.name
 
   vpc_security_group_ids = [

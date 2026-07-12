@@ -41,3 +41,8 @@ variable "master_username" {
   type        = string
   default     = "dbadmin"
 }
+variable "master_password" {
+  description = "Database master password"
+  type        = string
+  sensitive   = true
+}

@@ -30,3 +30,6 @@ output "database_endpoint" {
 output "database_identifier" {
   value = module.database.db_instance_identifier
 }
+output "database_arn" {
+  value = module.database.db_instance_arn
+}

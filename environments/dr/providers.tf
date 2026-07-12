@@ -15,12 +15,12 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 
   default_tags {
     tags = {
       Project     = "AWS-Multi-Region-DR"
-      Environment = "Primary"
+      Environment = "DR"
       ManagedBy   = "Terraform"
     }
   }

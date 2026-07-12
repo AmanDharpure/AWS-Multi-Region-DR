@@ -67,12 +67,53 @@ module "compute" {
 module "database" {
   source = "../../modules/database"
 
-  project_name = var.project_name
-  environment  = var.environment
+  project_name    = var.project_name
+  environment     = var.environment
+  master_password = var.master_password
 
   database_subnet_ids = module.networking.private_subnet_ids
 
   database_security_group_id = module.security.database_security_group_id
 
   instance_class = "db.t3.micro"
+}
+module "monitoring" {
+  source = "../../modules/monitoring"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  notification_email = var.notification_email
+
+  load_balancer_arn_suffix = module.alb.load_balancer_arn_suffix
+  target_group_arn_suffix  = module.alb.target_group_arn_suffix
+
+  autoscaling_group_name = module.compute.autoscaling_group_name
+  database_identifier    = module.database.db_instance_identifier
+}
+module "failover_orchestrator" {
+  source = "../../modules/failover-lambda"
+
+  project_name = var.project_name
+  environment  = "primary-orchestrator"
+
+  dr_region             = "us-west-2"
+  dr_asg_name           = "AWS-Multi-Region-DR-dr-asg"
+  dr_replica_identifier = "aws-multi-region-dr-dr-postgres-replica"
+  dr_desired_capacity   = 2
+
+  lambda_source_file = "${path.root}/../../lambda/failover/lambda_function.py"
+
+  dry_run = true
+}
+module "eventbridge" {
+  source = "../../modules/eventbridge"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  lambda_function_arn  = module.failover_orchestrator.lambda_function_arn
+  lambda_function_name = module.failover_orchestrator.lambda_function_name
+
+  alarm_name = module.monitoring.asg_alarm_name
 }

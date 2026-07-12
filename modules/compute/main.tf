@@ -97,6 +97,18 @@ resource "aws_autoscaling_group" "application" {
 
   health_check_type         = "ELB"
   health_check_grace_period = 180
+  enabled_metrics = [
+  "GroupMinSize",
+  "GroupMaxSize",
+  "GroupDesiredCapacity",
+  "GroupInServiceInstances",
+  "GroupPendingInstances",
+  "GroupStandbyInstances",
+  "GroupTerminatingInstances",
+  "GroupTotalInstances"
+]
+
+metrics_granularity = "1Minute"
 
   target_group_arns = [
     var.target_group_arn
