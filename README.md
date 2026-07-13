@@ -301,20 +301,20 @@ Traffic redirected to DR Region
 ## 🚀 Auto Scaling Group
 
 <p align="center">
-  <img src="screenshots/01-Auto scaling.png" width="100%" alt="Auto Scaling Group">
+  <img src="screenshots/01-Auto%20scaling.png" width="100%" alt="Auto Scaling Group">
 </p>
 
 ---
 
-## ⚡ Lambda Function
+## ⚡ AWS Lambda Function
 
 <p align="center">
-  <img src="screenshots/02-Lambda.png" width="100%" alt="Lambda">
+  <img src="screenshots/02-Lambda.png" width="100%" alt="AWS Lambda">
 </p>
 
 ---
 
-## 📊 CloudWatch Monitoring
+## 📊 Amazon CloudWatch
 
 <p align="center">
   <img src="screenshots/03-cloudwatch.png" width="100%" alt="CloudWatch">
@@ -322,26 +322,26 @@ Traffic redirected to DR Region
 
 ---
 
-## 🗄️ Amazon RDS Database
-
-<p align="center">
-  <img src="screenshots/04-database.png" width="100%" alt="Database">
-</p>
-
----
-
 ## 💻 Amazon EC2 Instances
 
 <p align="center">
-  <img src="screenshots/05-ec2.png" width="100%" alt="EC2">
+  <img src="screenshots/04-ec2.png" width="100%" alt="EC2 Instances">
 </p>
 
 ---
 
-## 🔔 Amazon SNS Notifications
+## 🌐 Public & Private Subnets
 
 <p align="center">
-  <img src="screenshots/06-sns.png" width="100%" alt="SNS">
+  <img src="screenshots/05-subnet.png" width="100%" alt="Subnets">
+</p>
+
+---
+
+## 🗄️ Amazon RDS
+
+<p align="center">
+  <img src="screenshots/06-rds.png" width="100%" alt="Amazon RDS">
 </p>
 
 ---
@@ -354,10 +354,10 @@ Traffic redirected to DR Region
 
 ---
 
-## 🌐 Amazon VPC
+## 🔒 Amazon VPC
 
 <p align="center">
-  <img src="screenshots/08-vpc .png" width="100%" alt="VPC">
+  <img src="screenshots/08-vpc%20.png" width="100%" alt="Amazon VPC">
 </p>
 ```
 
