@@ -298,83 +298,66 @@ Traffic redirected to DR Region
 
 # 📸 Project Screenshots
 
-
-## 2️⃣ Amazon VPC
+## 🚀 Auto Scaling Group
 
 <p align="center">
-<img src="screenshots/01-Auto Scaling.png" width="100%">
+  <img src="screenshots/01-Auto scaling.png" width="100%" alt="Auto Scaling Group">
 </p>
 
 ---
 
-## 3️⃣ Route 53 DNS Failover
+## ⚡ Lambda Function
 
 <p align="center">
-<img src="screenshots/02-route53.png" width="100%">
+  <img src="screenshots/02-Lambda.png" width="100%" alt="Lambda">
 </p>
 
 ---
 
-## 4️⃣ Application Load Balancer
+## 📊 CloudWatch Monitoring
 
 <p align="center">
-<img src="screenshots/01-alb.png" width="100%">
+  <img src="screenshots/03-cloudwatch.png" width="100%" alt="CloudWatch">
 </p>
 
 ---
 
-## 5️⃣ Auto Scaling Group
+## 🗄️ Amazon RDS Database
 
 <p align="center">
-<img src="screenshots/02-autoscaling.png" width="100%">
+  <img src="screenshots/04-database.png" width="100%" alt="Database">
 </p>
 
 ---
 
-## 6️⃣ EC2 Instances
+## 💻 Amazon EC2 Instances
 
 <p align="center">
-<img src="screenshots/03-ec2.png" width="100%">
+  <img src="screenshots/05-ec2.png" width="100%" alt="EC2">
 </p>
 
 ---
 
-## 7️⃣ Amazon RDS
+## 🔔 Amazon SNS Notifications
 
 <p align="center">
-<img src="screenshots/04-rds.png" width="100%">
+  <img src="screenshots/06-sns.png" width="100%" alt="SNS">
 </p>
 
 ---
 
-## 8️⃣ CloudWatch Monitoring
+## 🏗️ Terraform Deployment
 
 <p align="center">
-<img src="screenshots/05-cloudwatch.png" width="100%">
+  <img src="screenshots/07-terraform,apply.png" width="100%" alt="Terraform Apply">
 </p>
 
 ---
 
-## 9️⃣ SNS Email Notifications
+## 🌐 Amazon VPC
 
 <p align="center">
-<img src="screenshots/06-sns.png" width="100%">
-</p>
-
----
-
-## 🔟 Terraform Deployment
-
-<p align="center">
-<img src="screenshots/07-terraform-apply.png" width="100%">
-</p>
-
----
-
-## 1️⃣1️⃣ Disaster Recovery Failover
-
-<p align="center">
-<img src="screenshots/08-lambda.png" width="100%">
+  <img src="screenshots/08-vpc .png" width="100%" alt="VPC">
 </p>
 ```
 
