@@ -298,24 +298,84 @@ Traffic redirected to DR Region
 
 # 📸 Project Screenshots
 
-```
-screenshots/
 
-├── terraform-apply.png
+## 2️⃣ Amazon VPC
 
-├── route53.png
+<p align="center">
+<img src="screenshots/01-vpc.png" width="100%">
+</p>
 
-├── load-balancer.png
+---
 
-├── autoscaling.png
+## 3️⃣ Route 53 DNS Failover
 
-├── cloudwatch.png
+<p align="center">
+<img src="screenshots/02-route53.png" width="100%">
+</p>
 
-├── sns.png
+---
 
-├── ec2.png
+## 4️⃣ Application Load Balancer
 
-└── failover.png
+<p align="center">
+<img src="screenshots/01-alb.png" width="100%">
+</p>
+
+---
+
+## 5️⃣ Auto Scaling Group
+
+<p align="center">
+<img src="screenshots/02-autoscaling.png" width="100%">
+</p>
+
+---
+
+## 6️⃣ EC2 Instances
+
+<p align="center">
+<img src="screenshots/03-ec2.png" width="100%">
+</p>
+
+---
+
+## 7️⃣ Amazon RDS
+
+<p align="center">
+<img src="screenshots/04-rds.png" width="100%">
+</p>
+
+---
+
+## 8️⃣ CloudWatch Monitoring
+
+<p align="center">
+<img src="screenshots/05-cloudwatch.png" width="100%">
+</p>
+
+---
+
+## 9️⃣ SNS Email Notifications
+
+<p align="center">
+<img src="screenshots/06-sns.png" width="100%">
+</p>
+
+---
+
+## 🔟 Terraform Deployment
+
+<p align="center">
+<img src="screenshots/07-terraform-apply.png" width="100%">
+</p>
+
+---
+
+## 1️⃣1️⃣ Disaster Recovery Failover
+
+<p align="center">
+<img src="screenshots/08-lambda.png" width="100%">
+</p>
 ```
 
 ---
