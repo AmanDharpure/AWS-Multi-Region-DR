@@ -393,7 +393,7 @@ Cloud & DevOps Engineer
 
 📧 Email:-amandharpure6@gmail.com
 
-LinkedIn:-linkedin.com/in/aman-dharpure-333397324
+LinkedIn:-https://www.linkedin.com/in/aman-dharpure-333397324/
 
 GitHub:-https://github.com/AmanDharpure
 
