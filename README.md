@@ -301,8 +301,6 @@ Traffic redirected to DR Region
 ```
 screenshots/
 
-├── architecture.png
-
 ├── terraform-apply.png
 
 ├── route53.png
