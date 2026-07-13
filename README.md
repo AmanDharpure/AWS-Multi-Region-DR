@@ -34,12 +34,35 @@ If the primary region becomes unavailable, traffic automatically fails over to t
 
 ---
 
-## 🏗️ AWS Architecture
+# 🏗️ AWS Architecture Diagram
 
 <p align="center">
-  <img src="diagrams/architecture.png" alt="<img width="1536" height="1024" alt="ChatGPT Image Jul 13, 2026, 01_31_55 PM" src="https://github.com/user-attachments/assets/955cb6e2-bc4e-4001-aafe-7a50807e35f9" />
-" width="100%">
+  <img src="diagrams/aws-multi-region-dr-architecture.png"
+       alt="AWS Multi-Region Disaster Recovery Architecture"
+       width="100%">
 </p>
+
+<p align="center">
+  <b>Production-Grade Multi-Region Disaster Recovery Architecture</b><br>
+  Built with AWS, Terraform, Route 53, Auto Scaling, CloudWatch, SNS, Amazon RDS, and Amazon S3.
+</p>
+
+---
+
+## Architecture Highlights
+
+- 🌎 **Primary Region:** us-east-1 (Active)
+- 🌎 **Disaster Recovery Region:** us-west-2 (Standby)
+- 🌐 **Amazon Route 53** performs DNS health checks and automatic failover.
+- ⚖️ **Application Load Balancer** distributes traffic across multiple EC2 instances.
+- 📈 **Auto Scaling Groups** ensure high availability and elasticity.
+- 💾 **Amazon RDS Cross-Region Replication** keeps the standby database synchronized.
+- 🪣 **Amazon S3 Cross-Region Backup** protects application backups.
+- 📊 **Amazon CloudWatch** continuously monitors infrastructure health.
+- 🔔 **Amazon SNS** sends real-time email alerts for failures and alarms.
+- 🏗️ **Terraform** provisions and manages the entire infrastructure as code.
+
+---
 
 # 🚀 Architecture Components
 
