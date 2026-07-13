@@ -1,4 +1,8 @@
-<div align="center">
+## 🏗️ AWS Architecture
+
+<p align="center">
+  <img src="diagrams/architecture.png" alt="AWS Multi-Region Disaster Recovery Architecture" width="100%">
+</p>
 
 # 🌍 AWS Multi-Region Disaster Recovery Architecture
 
