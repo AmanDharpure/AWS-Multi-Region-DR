@@ -34,17 +34,17 @@ If the primary region becomes unavailable, traffic automatically fails over to t
 
 ---
 
-# 🏗️ AWS Architecture Diagram
+## 🏗️ AWS Architecture Diagram
 
 <p align="center">
-  <img src="diagrams/aws-multi-region-dr-architecture.png"
+  <img src="./diagrams/aws-multi-region-dr-architecture.png"
        alt="AWS Multi-Region Disaster Recovery Architecture"
        width="100%">
 </p>
 
 <p align="center">
-  <b>Production-Grade Multi-Region Disaster Recovery Architecture</b><br>
-  Built with AWS, Terraform, Route 53, Auto Scaling, CloudWatch, SNS, Amazon RDS, and Amazon S3.
+<b>Production-Grade Multi-Region Disaster Recovery Architecture</b><br>
+Built with AWS, Terraform, Route 53, Auto Scaling, CloudWatch, SNS, Amazon RDS, and Amazon S3.
 </p>
 
 ---
