@@ -37,7 +37,8 @@ If the primary region becomes unavailable, traffic automatically fails over to t
 ## 🏗️ AWS Architecture
 
 <p align="center">
-  <img src="diagrams/architecture.png" alt="AWS Multi-Region Disaster Recovery Architecture" width="100%">
+  <img src="diagrams/architecture.png" alt="<img width="1536" height="1024" alt="ChatGPT Image Jul 13, 2026, 01_31_55 PM" src="https://github.com/user-attachments/assets/955cb6e2-bc4e-4001-aafe-7a50807e35f9" />
+" width="100%">
 </p>
 
 # 🚀 Architecture Components
