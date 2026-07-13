@@ -34,78 +34,11 @@ If the primary region becomes unavailable, traffic automatically fails over to t
 
 ---
 
-# 🏗 AWS Architecture
+## 🏗️ AWS Architecture
 
-```mermaid
-flowchart LR
-
-Users((Users))
-
-Users --> R53
-
-subgraph Primary Region (us-east-1)
-
-R53[Route53]
-
-ALB1[Application Load Balancer]
-
-ASG1[Auto Scaling Group]
-
-EC21[EC2 Instance 1]
-EC22[EC2 Instance 2]
-
-RDS1[(Primary Database)]
-
-CW1[CloudWatch]
-
-SNS1[SNS]
-
-end
-
-subgraph Disaster Recovery Region (us-west-2)
-
-ALB2[Application Load Balancer]
-
-ASG2[Auto Scaling Group]
-
-EC23[EC2 Instance 1]
-EC24[EC2 Instance 2]
-
-RDS2[(Standby Database)]
-
-CW2[CloudWatch]
-
-SNS2[SNS]
-
-end
-
-S3[(S3 Cross Region Backup)]
-
-CW1 --> SNS1
-CW2 --> SNS2
-
-ALB1 --> ASG1
-
-ASG1 --> EC21
-ASG1 --> EC22
-
-ALB2 --> ASG2
-
-ASG2 --> EC23
-ASG2 --> EC24
-
-RDS1 --> RDS2
-
-RDS1 --> S3
-
-RDS2 --> S3
-
-R53 --> ALB1
-
-R53 -.Failover.-> ALB2
-```
-
----
+<p align="center">
+  <img src="diagrams/architecture.png" alt="AWS Multi-Region Disaster Recovery Architecture" width="100%">
+</p>
 
 # 🚀 Architecture Components
 
