@@ -391,11 +391,11 @@ Traffic redirected to DR Region
 
 Cloud & DevOps Engineer
 
-📧 Email
+📧 Email:-amandharpure6@gmail.com
 
-LinkedIn
+LinkedIn:-linkedin.com/in/aman-dharpure-333397324
 
-GitHub
+GitHub:-https://github.com/AmanDharpure
 
 ---
 
