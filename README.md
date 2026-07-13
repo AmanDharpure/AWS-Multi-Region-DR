@@ -302,7 +302,7 @@ Traffic redirected to DR Region
 ## 2️⃣ Amazon VPC
 
 <p align="center">
-<img src="screenshots/01-vpc.png" width="100%">
+<img src="screenshots/01-Auto Scaling.png" width="100%">
 </p>
 
 ---
